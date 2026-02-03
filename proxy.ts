@@ -1,15 +1,13 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
-export function middleware(req: NextRequest) {
+export function proxy(req: NextRequest) {
   const { pathname } = req.nextUrl;
 
   // Korumalı sayfalar
   const protectedPaths = ["/hesabim"];
 
-  const isProtected = protectedPaths.some((path) =>
-    pathname.startsWith(path)
-  );
+  const isProtected = protectedPaths.some((path) => pathname.startsWith(path));
 
   // Korumalı değilse devam et
   if (!isProtected) {
