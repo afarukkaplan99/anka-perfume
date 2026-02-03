@@ -1,0 +1,62 @@
+{
+  "announcements": [
+    {
+      "id": "n1",
+      "title": "Yeni seri: Anka Signature",
+      "body": "Kişiselleştirilebilir notalar artık daha premium. /olustur sayfasında deneyebilirsin.",
+      "tag": "Yeni",
+      "date": "2026-01-28"
+    },
+    {
+      "id": "n2",
+      "title": "Kargo süreci güncellendi",
+      "body": "Siparişlerin daha hızlı hazırlanması için paketleme hattı iyileştirildi.",
+      "tag": "Duyuru",
+      "date": "2026-01-28"
+    }
+  ],
+  "campaigns": [
+    {
+      "id": "c1",
+      "title": "Hoş geldin indirimi",
+      "body": "İlk siparişinde %10 indirim",
+      "badge": "%10",
+      "expiresAt": "2026-02-15"
+    },
+    {
+      "id": "c2",
+      "title": "Seçili setlerde fırsat",
+      "body": "Hediye paketlerinde ücretsiz kargo",
+      "badge": "Ücretsiz Kargo",
+      "expiresAt": "2026-02-10"
+    }
+  ],
+  "giftCodes": [
+    {
+      "id": "g1",
+      "code": "ANKA-IMZA-10",
+      "desc": "Sepette %10 indirim",
+      "status": "active"
+    },
+    {
+      "id": "g2",
+      "code": "ANKA-KARGO",
+      "desc": "Ücretsiz kargo",
+      "status": "active"
+    }
+  ],
+  "newScents": [
+    {
+      "id": "s1",
+      "name": "Amber Royale",
+      "notes": ["Amber", "Vanilya", "Sandal"],
+      "status": "Yeni"
+    },
+    {
+      "id": "s2",
+      "name": "Oud Velvet",
+      "notes": ["Oud", "Safran", "Gül"],
+      "status": "Trend"
+    }
+  ]
+}
