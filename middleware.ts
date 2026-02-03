@@ -7,9 +7,7 @@ export function middleware(req: NextRequest) {
   // Korumalı sayfalar
   const protectedPaths = ["/hesabim"];
 
-  const isProtected = protectedPaths.some((path) =>
-    pathname.startsWith(path)
-  );
+  const isProtected = protectedPaths.some((path) => pathname.startsWith(path));
 
   // Korumalı değilse devam et
   if (!isProtected) {
@@ -32,5 +30,6 @@ export function middleware(req: NextRequest) {
 }
 
 export const config = {
+  // Sadece /hesabim ve altını yakala (performans + döngü riskini sıfırlar)
   matcher: ["/hesabim/:path*"],
 };
